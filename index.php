@@ -9,8 +9,8 @@
  <script>
  function keyFunction() {
 	
-	if ((event.altKey) && (event.keyCode==17))//alt+ctrl-->>網頁跳轉
-		document.location.href="https://www.pornhub.com/";
+	if ((event.altKey) && (event.keyCode==17))
+		document.location.href="https://www.google.com.tw/";
 }
 document.onkeydown=keyFunction;
 </script>
