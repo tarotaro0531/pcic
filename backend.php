@@ -8,7 +8,7 @@
 
 <?php	
 	
-		$file = fopen('C:\xampp\htdocs\xampp\opinion.csv','r');   
+		$file = fopen('opinion.csv','r');   
 		while ($data = fgetcsv($file)) {    
         print_r($data); 
 		}   
