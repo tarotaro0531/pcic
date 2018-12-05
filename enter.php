@@ -9,7 +9,7 @@
 		}
 		else{
 		$content="{$_POST['TALK']}\n";
-	    $fp = fopen('C:\xampp\htdocs\xampp\opinion.csv', "a+");   
+	    $fp = fopen('opinion.csv', "a+");   
 		fwrite($fp,$content,strlen($content));
 		fclose($fp);   
 		header("location:index.php");
