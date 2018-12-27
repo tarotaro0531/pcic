@@ -1,28 +1,9 @@
 
-<!DOCTYPE html>
-<!--
-    IIIIIIIIII NNNNNNNN        NNNNNNNN FFFFFFFFFFFFFFFFFFFFFF      OOOOOOOOO      RRRRRRRRRRRRRRRRR   
-    I::::::::I N:::::::N       N::::::N F::::::::::::::::::::F    OO:::::::::OO    R::::::::::::::::R  
-    I::::::::I N::::::::N      N::::::N F::::::::::::::::::::F  OO:::::::::::::OO  R::::::RRRRRR:::::R 
-    II::::::II N:::::::::N     N::::::N FF::::::FFFFFFFFF::::F O:::::::OOO:::::::O RR:::::R     R:::::R
-      I::::I   N::::::::::N    N::::::N   F:::::F       FFFFFF O::::::O   O::::::O   R::::R     R:::::R
-      I::::I   N:::::::::::N   N::::::N   F:::::F              O:::::O     O:::::O   R::::R     R:::::R
-      I::::I   N:::::::N::::N  N::::::N   F::::::FFFFFFFFFF    O:::::O     O:::::O   R::::RRRRRR:::::R 
-      I::::I   N::::::N N::::N N::::::N   F:::::::::::::::F    O:::::O     O:::::O   R:::::::::::::RR  
-      I::::I   N::::::N  N::::N:::::::N   F:::::::::::::::F    O:::::O     O:::::O   R::::RRRRRR:::::R 
-      I::::I   N::::::N   N:::::::::::N   F::::::FFFFFFFFFF    O:::::O     O:::::O   R::::R     R:::::R
-      I::::I   N::::::N    N::::::::::N   F:::::F              O:::::O     O:::::O   R::::R     R:::::R
-      I::::I   N::::::N     N:::::::::N   F:::::F              O::::::O   O::::::O   R::::R     R:::::R
-    II::::::II N::::::N      N::::::::N FF:::::::FF            O:::::::OOO:::::::O RR:::::R     R:::::R
-    I::::::::I N::::::N       N:::::::N F::::::::FF             OO:::::::::::::OO  R::::::R     R:::::R
-    I::::::::I N::::::N        N::::::N F::::::::FF               OO:::::::::OO    R::::::R     R:::::R
-    IIIIIIIIII NNNNNNNN         NNNNNNN FFFFFFFFFFF                 OOOOOOOOO      RRRRRRRR     RRRRRRR
-
-    You have no sister.
-    (c) INFOR 31st.
--->
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+ <script type="text/javascript" src="./js/jquery.cycle.lite.js"></script> 
     <meta charset="utf-8" />
     <title>INFOR 30st</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -40,6 +21,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
     <link rel="stylesheet" href="./infor31.css">
+	<script>
+ function keyFunction() {
+	
+	if ((event.altKey) && (event.keyCode==17))		document.location.href="https://www.pornhub.com/";
+}
+document.onkeydown=keyFunction;
+</script>
 </head>
 <body>
     <!-- Sidebar -->
@@ -65,10 +53,10 @@
         <header class="ts center aligned large fluid slate" id="banner">
             <div class="image">
                 <div class="filter"></div>
-                <img src="images/group.jpg" alt="合照" />
+                <img src="pages/dinosour.jpg" alt="恐龍啦"/>
             </div>
-            <span class="header animated fadeIn">ＰＣＩＣ</span>
-            <span class="description animated fadeIn">板橋高中資訊社<br /></span>
+            <span class="header animated fadeIn" style="color:#003C9D;">ＰＣＩＣ ３０ＴＨ</span>
+            <span class="description animated fadeIn">板橋高中資訊社 第30屆<br /></span>
         </header>
         <!-- Default Menu -->
         <nav class="ts fluid pointing secondary menu" style="visibility: hidden;" id="defaultMenu">
@@ -88,7 +76,7 @@
                         </div></nobr>
                         <nobr><div class="ten wide column">
                             <div class="ts padded flatted borderless inverted segment" id="introduce" style="margin-left:120px;margin-top:80px;width:400px;" >
-                                <blockquote class="ts quote" >
+                                <blockquote >
                                     <p ><font size="5">你是否有個駭客夢呢?</font></p>
 	                                <p>你也想發現隱藏在網路下的暗潮嗎?</p>
 	                                <p>你是否佩服動動手就能掌握生殺大權的人?</p>
@@ -115,16 +103,12 @@
                         <div class="four wide column ts inverted segment" id="tabContainer">
                             <div class="ts tablet or large device only borderless flatted fluid secondary vertical menu" id="desktopTab">
                                 <a class="cadre item" data-tab="cadre">幹部介紹</a>
-                                <a class="item" data-tab="activity">活動介紹</a>
-                                <a class="item" data-tab="group">分組介紹</a>
-								<a class="item" data-tab="history">歷年記事</a>
+                                <a class="item" data-tab="class">課程介紹</a>
 								<a class="item" data-tab="game">比賽心得</a>
                             </div>
                             <div class="ts mobile only evenly divided secondary menu" id="mobileTab">
                                 <a class="cadre item" data-tab="cadre">幹部介紹</a>
-                                <a class="item" data-tab="activity">活動介紹</a>
-                                <a class="item" data-tab="group">分組介紹</a>
-								<a class="item" data-tab="history">歷年記事</a>
+                                <a class="item" data-tab="class">課程介紹</a>
 								<a class="item" data-tab="game">比賽心得</a>
                             </div>
                         </div>
@@ -157,31 +141,51 @@
                                         <p><font size="5">教學長－葉俊豪</font><p>
                                     </div>
                             </div>
-                            <div class="ts animated fadeIn padded tab segment" data-tab="activity">
-                                <img src="images/cscamp.jpg" alt="activity" />
+                            <div class="ts animated fadeIn padded tab segment" data-tab="class">
                                 <div class="ts center aligned big header">
-                                    社團活動
+                                    課程介紹
                                     <div class="sub header">
-                                        建中資訊社與全台近百個社團結為友社，並主要與楓資及景資一起主辦活動。<br />
-                                        除了常態的聯合社課以外，還有定期的暑訓、迎新、秋遊、寒訓和春遊等大型活動。
+                                        <font size="4">進階培訓課</font><br />
+                                        <hr>
+										<font size="3">時間:每周一晚上6:00~9:00</font><br />
+										<hr>
+										<font size="3">教學:BALEUTESHIH</font><br />
+										<br>
+										<br>
+										<font size="4">APCS課 CLASS FOR C++</font><br />
+                                        <hr>
+										<font size="3">時間:每周二晚上6:00~9:00</font><br />
+										<hr>
+										<font size="3">教學:SNAIL</font><br />
                                     </div>
                                 </div>
                             </div>
-                            <div class="ts animated fadeIn padded tab segment" data-tab="future">
-                                <img src="images/future.jpg" alt="future" />
+                            <div class="ts animated fadeIn padded tab segment" data-tab="games">
                                 <div class="ts center aligned big header">
-                                    未來領航
+                                    比賽心得
                                     <div class="sub header">
-                                        建中資訊社在全台灣至全世界佈下資訊科技的人才，我們不只侷限於僅僅一個高中的社團，更放眼至全世界最頂尖的資訊社群。
+									<pre>
+                                         Q1:當你遇到WA的時候，你會選擇盡全力去解WA，還是想辦法先去解其他題目?
+										 A:看時間吧，當然要自己評估浪費太多時間在同一題上會不會很不值得啊如果剩下的題目都不會顯然就是繼續解WA，
+		不然還是把其他題都穩穩拿下來比較好 而且有時候會只是小bug，至少如果第一次WA我還是會先看是不是小bug，找不到才會評估。
+		                             <br>
+									     Q2:數學好的話，打比賽的助益在哪裡?
+	                                     A:寫並查集、二分搜並不會需要用到數學，但是為什麼大部分進入資訊奧林匹亞的人數學都非常好? 
+		資訊其實有很多題目和數學相關，數學好的人會很吃香，也相對比較容易有好成績 不過數學不是很好卻當上國手的例子也是有的，曾經就有一位連二元一次聯立方程式都不是很熟的選手當上國手。
+		                             <br>
+									     Q3:請問你覺得哪個比賽對你而言意義最重大(花費最多心思在這個比賽上面)?
+	                                     A : TOI啊 ( ?
+	                               	 <br> 
+	                                     Q4:請問你覺得哪個比賽的獎品最優渥? 
+	                                     A : NPSC
+		                             <br>
+	                                     Q5:哪個比賽的題目最細膩(階段性部分分數很多)? 
+	                                     A:全國賽跟TOI差不多，都算細膩。不過APIO、IOI這種國際賽是最細的                                                                       ---------Respondent:Brian Tsai</font>
+		</pre>            
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="ts feature container">
-                        <i class="book icon"></i>
-                        <i class="wifi icon"></i>
-                        <i class="area chart icon"></i>
                     </div>
                 </div>
             </section>
@@ -189,11 +193,34 @@
 			<br>
 			<br>
         <!-- Footer -->
+		 <div class="ts fluid container" id="content">
+            <section class="ts fluid container" id="clubIntro">
+                <div class="ts inner container">
+                    <div class="ts huge center aligned header">
+                        意見與回饋
+                        <div class="sub header">有什麼建議嗎?歡迎跟我們說</div>
+						<br>
+						<center><form><font size="4">你對此網站的看法</font>
+                            <select name="你對此網站的看法">
+　                             <option >滿意</option>
+　                             <option >很滿意</option>
+　                             <option >超級滿意</option>
+　                             <option >滿意到不行</option>
+                            </select>
+                          <input type="submit" value="Submit">
+                        </center>
+                        </form>
+                        <form action="enter.php" method="post"><center>
+                           意見及回饋:<br>
+                              <textarea name="TALK" cols="100" rows="10"></textarea><br>
+                                 <input type="submit" value="送出(感謝填寫~祝你AC)">
+                                      </center></form>
+                                               </div>
         <footer class="ts bottom attached very padded fluid inverted segment">
             <div class="ts inner container">
                 <div class="ts stackable relaxed grid">
                     <div class="four wide column" >
-                        <a href="/"><img src="images/logo.png" alt="logo" class="logo" /></a>
+                        <a href="/"></a>
                     </div>
                     <div class="five wide placeholder column">
                         <!-- Place Holder -->
